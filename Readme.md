@@ -1,3 +1,5 @@
+Built free and powerfull web application with ExtJS and Yii Framework
+
 # WHAT IS PHPExtJS ?
 
 We try to make about combining the best web applications framework. T
