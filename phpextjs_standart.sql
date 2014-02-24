@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 24, 2014 at 01:44 PM
+-- Generation Time: Feb 24, 2014 at 03:50 PM
 -- Server version: 5.5.35-cll
 -- PHP Version: 5.3.17
 
@@ -10057,6 +10057,37 @@ INSERT INTO `employees` (`id`, `birth_date`, `first_name`, `last_name`, `gender`
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `menu`
+--
+
+CREATE TABLE IF NOT EXISTS `menu` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `parent_id` bigint(20) DEFAULT NULL,
+  `label` text,
+  `url` text,
+  `sort` smallint(6) DEFAULT NULL,
+  `type` longtext,
+  `status` smallint(6) DEFAULT NULL,
+  `text` longtext,
+  `iconCls` longtext,
+  `handler` longtext,
+  `scope` longtext,
+  `windowId` longtext,
+  `module` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=85 ;
+
+--
+-- Dumping data for table `menu`
+--
+
+INSERT INTO `menu` (`id`, `parent_id`, `label`, `url`, `sort`, `type`, `status`, `text`, `iconCls`, `handler`, `scope`, `windowId`, `module`) VALUES
+(1, 0, 'Master', '#', 1, 'root', 0, 'Master', 'bogus', '#', 'this', 'master', 'Master'),
+(2, 0, 'User', '#', 2, 'root', 1, 'User', 'bogus', 'user', 'this', 'User', 'User');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `organisation`
 --
 
@@ -10113,7 +10144,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `name` varchar(128) NOT NULL,
   `photo` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=32 ;
 
 --
 -- Dumping data for table `user`
@@ -10121,9 +10152,12 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 INSERT INTO `user` (`id`, `username`, `password`, `name`, `photo`) VALUES
 (1, 'admin', 'e10adc3949ba59abbe56e057f20f883e', 'Administrator', NULL),
-(2, 'john', 'e10adc3949ba59abbe56e057f20f883e', 'Johny', NULL),
-(3, 'mark', 'e10adc3949ba59abbe56e057f20f883e', 'Mark', ''),
-(4, 'paul', 'e10adc3949ba59abbe56e057f20f883e', 'Paul', '');
+(19, 'test', 'e10adc3949ba59abbe56e057f20f883e', 'test', ''),
+(26, 'karepmu', 'e10adc3949ba59abbe56e057f20f883e', 'yo wessss', NULL),
+(27, 'demo', 'e10adc3949ba59abbe56e057f20f883e', 'demo1234', NULL),
+(28, 'mm', 'e10adc3949ba59abbe56e057f20f883e', 'mm', NULL),
+(29, 'dedel', 'e10adc3949ba59abbe56e057f20f883e', 'dela', NULL),
+(31, 'test', 'e10adc3949ba59abbe56e057f20f883e', 'test', NULL);
 
 -- --------------------------------------------------------
 
