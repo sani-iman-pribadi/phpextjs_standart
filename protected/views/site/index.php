@@ -9,7 +9,7 @@ $this->pageTitle=Yii::app()->name;
 We try to make about combining the best web applications framework. There is server side and client side framework integrated together.
 We are using PHP yiiframework to serving all client requests and using the latest ExtJs framework to make a powerfull application interfaces like native apps.
 <br />
-you can perform CRUD (create, read, update, delete) on a sample of data, unless the data admin user
+You can perform CRUD (create, read, update, delete) on a sample of data, unless the data admin user
 </p>
 <span>
 You may login with <br />
