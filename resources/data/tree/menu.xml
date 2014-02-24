@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<nodes>
+  <node>
+    <text>AbstractComponent.js</text>
+    <id>src/AbstractComponent.js</id>
+    <cls>file</cls>
+    <leaf>1</leaf>
+  </node>
+  <node>
+    <text>AbstractManager.js</text>
+    <id>src/AbstractManager.js</id>
+    <cls>file</cls>
+    <leaf>1</leaf>
+  </node>
+  <node>
+    <text>AbstractPlugin.js</text>
+    <id>src/AbstractPlugin.js</id>
+    <cls>file</cls>
+    <leaf>1</leaf>
+  </node>
+  <node>
+    <text>Action.js</text>
+    <id>src/Action.js</id>
+    <cls>file</cls>
+    <leaf>1</leaf>
+  </node>
+  <node>
+    <text>Ajax.js</text>
+    <id>src/Ajax.js</id>
+    <cls>file</cls>
+    <leaf>1</leaf>
+  </node>
+  <node>
+    <text>app</text>
+    <id>src/app</id>
+    <cls>folder</cls>
+    <leaf/>
+  </node>
+  <node>
+    <text>button</text>
+    <id>src/button</id>
+    <cls>folder</cls>
+    <leaf/>
+  </node>
+</nodes>
+
