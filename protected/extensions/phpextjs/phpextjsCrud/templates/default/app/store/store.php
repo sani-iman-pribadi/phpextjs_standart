@@ -5,13 +5,13 @@ Ext.define('PHPExtJS.store.<?php echo $this->controllerClass; ?>', {
     remoteFilter: true,
     autoSync: true,
     proxy: {
-        type: 'ajax',
+        type: 'rest',
         
         api: {
-            create: 'index.php/<?php echo $this->controllerClass; ?>/create', 
-            read: 'index.php/<?php echo $this->controllerClass; ?>/read',
-            update: 'index.php/<?php echo $this->controllerClass; ?>/update',
-            destroy: 'index.php/<?php echo $this->controllerClass; ?>/delete',
+            create: '<?php echo $this->controllerClass; ?>/create', 
+            read: '<?php echo $this->controllerClass; ?>/read',
+            update: '<?php echo $this->controllerClass; ?>/update',
+            destroy: '<?php echo $this->controllerClass; ?>/delete',
         },
         
         reader: {

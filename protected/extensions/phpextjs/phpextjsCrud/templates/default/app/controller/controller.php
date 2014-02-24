@@ -1,8 +1,5 @@
 Ext.define('PHPExtJS.controller.<?php echo $this->modelClass; ?>Controller', {
     extend: 'Ext.app.Controller',
-    requires: [
-    'Ext.data.Session'
-    ],
     stores: [
         '<?php echo $this->modelClass; ?>',
     ],
@@ -106,7 +103,7 @@ Ext.define('PHPExtJS.controller.<?php echo $this->modelClass; ?>Controller', {
         var store = this.get<?php echo $this->modelClass; ?>Store();
 
         store.remove(record);
-        this.get<?php echo $this->modelClass; ?>Store().sync();
+        //this.get<?php echo $this->modelClass; ?>Store().sync();
 
         this.get<?php echo $this->modelClass; ?>Store().load();
     },
