@@ -14,6 +14,12 @@ Ext.define('PHPExtJS.store.<?php echo $this->controllerClass; ?>', {
             destroy: '<?php echo $this->controllerClass; ?>/delete',
         },
         
+        listeners: {
+            exception: function(proxy, response, options) {
+                Ext.MessageBox.alert('Warning!', response.status + ": " + response.statusText + " " + response.responseText + "!");
+            }
+        },
+        
         reader: {
             type: 'json',
             root: 'data',
