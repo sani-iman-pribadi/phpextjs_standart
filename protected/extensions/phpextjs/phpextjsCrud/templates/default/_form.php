@@ -4,7 +4,6 @@ Ext.define('PHPExtJS.view.<?php echo $this->modelClass; ?>._form', {
     alias: 'widget.<?php echo strtolower($this->modelClass); ?>Form',
     requires: ['Ext.form.Panel',
         'Ext.form.field.Text',
-        'Ext.ux.DataTip',
         'Ext.data.*'
     ],
     title: 'PHPExtJS - Form <?php echo $this->modelClass; ?>',
