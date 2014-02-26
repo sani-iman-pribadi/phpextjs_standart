@@ -1,0 +1,12 @@
+{
+    "name": "PHPExtJS",
+    "type": "tools",
+    "creator": "Sani Iman Pribadi",
+    "summary": "A new open source platform to integrated between both of Ext JS and Yii PHP Framework.",
+    "detailedDescription": "Long description of package",
+    "version": "1.0.0",
+    "compatVersion": "1.0.0",
+    "format": "1",
+    "local": true,
+    "requires": []
+}
