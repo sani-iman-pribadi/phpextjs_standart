@@ -1,9 +1,9 @@
 {
     "name": "PHPExtJS",
-    "type": "tools",
+    "type": "Tools",
     "creator": "Sani Iman Pribadi",
     "summary": "A new open source platform to integrated between both of Ext JS and Yii PHP Framework.",
-    "detailedDescription": "Long description of package",
+    "detailedDescription": "We build one of great web application framework that full integrated between both of Server and Client Side framework together. To support this particular Web application, the frameworks are built using Yii PHP Framework to provide service for the client requests.  Additionally, this web application also contain of latest ExtJS framework to provide high performance application interfaces such as native apps.",
     "version": "1.0.0",
     "compatVersion": "1.0.0",
     "format": "1",
