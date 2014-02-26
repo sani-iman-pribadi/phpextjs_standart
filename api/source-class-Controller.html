@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+	<meta name="robots" content="noindex" />
+
+	<title>File protected/components/Controller.php | phpextjs_standart</title>
+
+	<script type="text/javascript" src="resources/combined.js?2091369894"></script>
+	<script type="text/javascript" src="elementlist.js?3965475218"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-ContactForm.html">ContactForm</a></li>
+				<li class="active"><a href="class-Controller.html">Controller</a></li>
+				<li><a href="class-LoginForm.html">LoginForm</a></li>
+				<li><a href="class-PhpextjsControllerCode.html">PhpextjsControllerCode</a></li>
+				<li><a href="class-PhpextjsControllerGenerator.html">PhpextjsControllerGenerator</a></li>
+				<li><a href="class-PHPExtJSCrudCode.html">PHPExtJSCrudCode</a></li>
+				<li><a href="class-PHPExtJSCrudGenerator.html">PHPExtJSCrudGenerator</a></li>
+				<li><a href="class-SiteController.html">SiteController</a></li>
+				<li><a href="class-SiteTest.html">SiteTest</a></li>
+				<li><a href="class-User.html">User</a></li>
+				<li><a href="class-UserController.html">UserController</a></li>
+				<li><a href="class-UserIdentity.html">UserIdentity</a></li>
+				<li><a href="class-WebTestCase.html">WebTestCase</a></li>
+				<li><a href="class-WebUser.html">WebUser</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-formatBytes.html">formatBytes</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="class-Controller.html" title="Summary of Controller"><span>Class</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><span id="1" class="l"><a class="l" href="#1"> 1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a class="l" href="#2"> 2: </a><span class="php-comment">/**
+</span></span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-comment"> * Controller is the customized base controller class.
+</span></span><span id="4" class="l"><a class="l" href="#4"> 4: </a><span class="php-comment"> * All controller classes for this application should extend from this base class.
+</span></span><span id="5" class="l"><a class="l" href="#5"> 5: </a><span class="php-comment"> */</span>
+</span><span id="6" class="l"><a class="l" href="#6"> 6: </a><span class="php-keyword1">class</span> <a id="Controller" href="#Controller">Controller</a> <span class="php-keyword1">extends</span> CController
+</span><span id="7" class="l"><a class="l" href="#7"> 7: </a>{
+</span><span id="8" class="l"><a class="l" href="#8"> 8: </a>    <span class="php-comment">/**
+</span></span><span id="9" class="l"><a class="l" href="#9"> 9: </a><span class="php-comment">     * @var string the default layout for the controller view. Defaults to '//layouts/column1',
+</span></span><span id="10" class="l"><a class="l" href="#10">10: </a><span class="php-comment">     * meaning using a single column layout. See 'protected/views/layouts/column1.php'.
+</span></span><span id="11" class="l"><a class="l" href="#11">11: </a><span class="php-comment">     */</span>
+</span><span id="12" class="l"><a class="l" href="#12">12: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$layout" href="#$layout">$layout</a></span>=<span class="php-quote">'//layouts/column1'</span>;
+</span><span id="13" class="l"><a class="l" href="#13">13: </a>    <span class="php-comment">/**
+</span></span><span id="14" class="l"><a class="l" href="#14">14: </a><span class="php-comment">     * @var array context menu items. This property will be assigned to {@link CMenu::items}.
+</span></span><span id="15" class="l"><a class="l" href="#15">15: </a><span class="php-comment">     */</span>
+</span><span id="16" class="l"><a class="l" href="#16">16: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$menu" href="#$menu">$menu</a></span>=<span class="php-keyword1">array</span>();
+</span><span id="17" class="l"><a class="l" href="#17">17: </a>    <span class="php-comment">/**
+</span></span><span id="18" class="l"><a class="l" href="#18">18: </a><span class="php-comment">     * @var array the breadcrumbs of the current page. The value of this property will
+</span></span><span id="19" class="l"><a class="l" href="#19">19: </a><span class="php-comment">     * be assigned to {@link CBreadcrumbs::links}. Please refer to {@link CBreadcrumbs::links}
+</span></span><span id="20" class="l"><a class="l" href="#20">20: </a><span class="php-comment">     * for more details on how to specify this property.
+</span></span><span id="21" class="l"><a class="l" href="#21">21: </a><span class="php-comment">     */</span>
+</span><span id="22" class="l"><a class="l" href="#22">22: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$breadcrumbs" href="#$breadcrumbs">$breadcrumbs</a></span>=<span class="php-keyword1">array</span>();
+</span><span id="23" class="l"><a class="l" href="#23">23: </a></span>}</code></pre>
+
+	<div id="footer">
+		phpextjs_standart API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
