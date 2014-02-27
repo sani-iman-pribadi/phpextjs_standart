@@ -1,3 +1,15 @@
+<?php
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Sani Iman Pribadi
+ *
+ */
+?>
 Ext.define('PHPExtJS.controller.<?php echo $this->controller; ?>Controller', {
     extend: 'Ext.app.Controller',
     requires: [

@@ -1,5 +1,10 @@
 <?php
-
+/**
+ *
+ * @author Sani Iman Pribadi
+ *
+ */
+    
 /**
  * This is the model class for table "user".
  *

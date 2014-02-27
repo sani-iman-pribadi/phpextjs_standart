@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Description of SiteController
+ *
+ * @author Sani Iman Pribadi
+ *
+ */
     class SiteController extends Controller {
 
         /**

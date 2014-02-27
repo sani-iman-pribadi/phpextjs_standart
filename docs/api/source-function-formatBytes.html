@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+	<meta name="robots" content="noindex" />
+
+	<title>File resources/data/tree/get-nodes.php | PHPExtJS</title>
+
+	<script type="text/javascript" src="resources/combined.js?2091369894"></script>
+	<script type="text/javascript" src="elementlist.js?2967063009"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-ContactForm.html">ContactForm</a></li>
+				<li><a href="class-Controller.html">Controller</a></li>
+				<li><a href="class-LoginForm.html">LoginForm</a></li>
+				<li><a href="class-PhpextjsControllerCode.html">PhpextjsControllerCode</a></li>
+				<li><a href="class-PhpextjsControllerGenerator.html">PhpextjsControllerGenerator</a></li>
+				<li><a href="class-PHPExtJSCrudCode.html">PHPExtJSCrudCode</a></li>
+				<li><a href="class-PHPExtJSCrudGenerator.html">PHPExtJSCrudGenerator</a></li>
+				<li><a href="class-SiteController.html">SiteController</a></li>
+				<li><a href="class-User.html">User</a></li>
+				<li><a href="class-UserController.html">UserController</a></li>
+				<li><a href="class-UserIdentity.html">UserIdentity</a></li>
+				<li><a href="class-WebUser.html">WebUser</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li class="active"><a href="function-formatBytes.html">formatBytes</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="function-formatBytes.html" title="Summary of formatBytes"><span>Function</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><span id="1" class="l"><a class="l" href="#1"> 1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a class="l" href="#2"> 2: </a><span class="php-comment">// from php manual page</span>
+</span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-keyword1">function</span> <a id="_formatBytes" href="#_formatBytes">formatBytes</a>(<span class="php-var">$val</span>, <span class="php-var">$digits</span> = <span class="php-num">3</span>, <span class="php-var">$mode</span> = <span class="php-quote">'SI'</span>, <span class="php-var">$bB</span> = <span class="php-quote">'B'</span>){ <span class="php-comment">//$mode == 'SI'|'IEC', $bB == 'b'|'B'</span>
+</span><span id="4" class="l"><a class="l" href="#4"> 4: </a>   <span class="php-var">$si</span> = <span class="php-keyword1">array</span>(<span class="php-quote">''</span>, <span class="php-quote">'K'</span>, <span class="php-quote">'M'</span>, <span class="php-quote">'G'</span>, <span class="php-quote">'T'</span>, <span class="php-quote">'P'</span>, <span class="php-quote">'E'</span>, <span class="php-quote">'Z'</span>, <span class="php-quote">'Y'</span>);
+</span><span id="5" class="l"><a class="l" href="#5"> 5: </a>   <span class="php-var">$iec</span> = <span class="php-keyword1">array</span>(<span class="php-quote">''</span>, <span class="php-quote">'Ki'</span>, <span class="php-quote">'Mi'</span>, <span class="php-quote">'Gi'</span>, <span class="php-quote">'Ti'</span>, <span class="php-quote">'Pi'</span>, <span class="php-quote">'Ei'</span>, <span class="php-quote">'Zi'</span>, <span class="php-quote">'Yi'</span>);
+</span><span id="6" class="l"><a class="l" href="#6"> 6: </a>   <span class="php-keyword1">switch</span>(<span class="php-keyword2">strtoupper</span>(<span class="php-var">$mode</span>)) {
+</span><span id="7" class="l"><a class="l" href="#7"> 7: </a>       <span class="php-keyword1">case</span> <span class="php-quote">'SI'</span> : <span class="php-var">$factor</span> = <span class="php-num">1000</span>; <span class="php-var">$symbols</span> = <span class="php-var">$si</span>; <span class="php-keyword1">break</span>;
+</span><span id="8" class="l"><a class="l" href="#8"> 8: </a>       <span class="php-keyword1">case</span> <span class="php-quote">'IEC'</span> : <span class="php-var">$factor</span> = <span class="php-num">1024</span>; <span class="php-var">$symbols</span> = <span class="php-var">$iec</span>; <span class="php-keyword1">break</span>;
+</span><span id="9" class="l"><a class="l" href="#9"> 9: </a>       <span class="php-keyword1">default</span> : <span class="php-var">$factor</span> = <span class="php-num">1000</span>; <span class="php-var">$symbols</span> = <span class="php-var">$si</span>; <span class="php-keyword1">break</span>;
+</span><span id="10" class="l"><a class="l" href="#10">10: </a>   }
+</span><span id="11" class="l"><a class="l" href="#11">11: </a>   <span class="php-keyword1">switch</span>(<span class="php-var">$bB</span>) {
+</span><span id="12" class="l"><a class="l" href="#12">12: </a>       <span class="php-keyword1">case</span> <span class="php-quote">'b'</span> : <span class="php-var">$val</span> *= <span class="php-num">8</span>; <span class="php-keyword1">break</span>;
+</span><span id="13" class="l"><a class="l" href="#13">13: </a>       <span class="php-keyword1">default</span> : <span class="php-var">$bB</span> = <span class="php-quote">'B'</span>; <span class="php-keyword1">break</span>;
+</span><span id="14" class="l"><a class="l" href="#14">14: </a>   }
+</span><span id="15" class="l"><a class="l" href="#15">15: </a>   <span class="php-keyword1">for</span>(<span class="php-var">$i</span>=<span class="php-num">0</span>;<span class="php-var">$i</span>&lt;<span class="php-keyword2">count</span>(<span class="php-var">$symbols</span>)-<span class="php-num">1</span> &amp;&amp; <span class="php-var">$val</span>&gt;=<span class="php-var">$factor</span>;<span class="php-var">$i</span>++)
+</span><span id="16" class="l"><a class="l" href="#16">16: </a>       <span class="php-var">$val</span> /= <span class="php-var">$factor</span>;
+</span><span id="17" class="l"><a class="l" href="#17">17: </a>   <span class="php-var">$p</span> = <span class="php-keyword2">strpos</span>(<span class="php-var">$val</span>, <span class="php-quote">'.'</span>);
+</span><span id="18" class="l"><a class="l" href="#18">18: </a>   <span class="php-keyword1">if</span>(<span class="php-var">$p</span> !== <span class="php-keyword1">false</span> &amp;&amp; <span class="php-var">$p</span> &gt; <span class="php-var">$digits</span>) <span class="php-var">$val</span> = <span class="php-keyword2">round</span>(<span class="php-var">$val</span>);
+</span><span id="19" class="l"><a class="l" href="#19">19: </a>   <span class="php-keyword1">elseif</span>(<span class="php-var">$p</span> !== <span class="php-keyword1">false</span>) <span class="php-var">$val</span> = <span class="php-keyword2">round</span>(<span class="php-var">$val</span>, <span class="php-var">$digits</span>-<span class="php-var">$p</span>);
+</span><span id="20" class="l"><a class="l" href="#20">20: </a>   <span class="php-keyword1">return</span> <span class="php-keyword2">round</span>(<span class="php-var">$val</span>, <span class="php-var">$digits</span>) . <span class="php-quote">' '</span> . <span class="php-var">$symbols</span>[<span class="php-var">$i</span>] . <span class="php-var">$bB</span>;
+</span><span id="21" class="l"><a class="l" href="#21">21: </a>}
+</span><span id="22" class="l"><a class="l" href="#22">22: </a>
+</span><span id="23" class="l"><a class="l" href="#23">23: </a><span class="php-comment">// grab the custom params</span>
+</span><span id="24" class="l"><a class="l" href="#24">24: </a><span class="php-var">$path</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$_REQUEST</span>[<span class="php-quote">'path'</span>])&amp;&amp;<span class="php-var">$_REQUEST</span>[<span class="php-quote">'path'</span>] == <span class="php-quote">'extjs'</span> ? <span class="php-quote">'../../../../../../../'</span> : <span class="php-quote">'../../../../../'</span>;
+</span><span id="25" class="l"><a class="l" href="#25">25: </a>
+</span><span id="26" class="l"><a class="l" href="#26">26: </a><span class="php-var">$node</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$_REQUEST</span>[<span class="php-quote">'node'</span>]) ? <span class="php-var">$_REQUEST</span>[<span class="php-quote">'node'</span>] : <span class="php-quote">''</span>;
+</span><span id="27" class="l"><a class="l" href="#27">27: </a><span class="php-var">$isXml</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$_REQUEST</span>[<span class="php-quote">'isXml'</span>]);
+</span><span id="28" class="l"><a class="l" href="#28">28: </a>
+</span><span id="29" class="l"><a class="l" href="#29">29: </a><span class="php-keyword1">if</span>(<span class="php-keyword2">strpos</span>(<span class="php-var">$node</span>, <span class="php-quote">'..'</span>) !== <span class="php-keyword1">false</span>){
+</span><span id="30" class="l"><a class="l" href="#30">30: </a>    <span class="php-keyword1">die</span>(<span class="php-quote">'Nice try buddy.'</span>);
+</span><span id="31" class="l"><a class="l" href="#31">31: </a>}
+</span><span id="32" class="l"><a class="l" href="#32">32: </a>
+</span><span id="33" class="l"><a class="l" href="#33">33: </a><span class="php-var">$nodes</span> = <span class="php-keyword1">array</span>();
+</span><span id="34" class="l"><a class="l" href="#34">34: </a><span class="php-var">$directory</span> = <span class="php-var">$path</span>.<span class="php-var">$node</span>;
+</span><span id="35" class="l"><a class="l" href="#35">35: </a><span class="php-keyword1">if</span> (<span class="php-keyword2">is_dir</span>(<span class="php-var">$directory</span>)){
+</span><span id="36" class="l"><a class="l" href="#36">36: </a>    <span class="php-var">$d</span> = <span class="php-keyword2">dir</span>(<span class="php-var">$directory</span>);
+</span><span id="37" class="l"><a class="l" href="#37">37: </a>    <span class="php-keyword1">while</span>(<span class="php-var">$f</span> = <span class="php-var">$d</span>-&gt;read()){
+</span><span id="38" class="l"><a class="l" href="#38">38: </a>        <span class="php-keyword1">if</span>(<span class="php-var">$f</span> == <span class="php-quote">'.'</span> || <span class="php-var">$f</span> == <span class="php-quote">'..'</span> || <span class="php-keyword2">substr</span>(<span class="php-var">$f</span>, <span class="php-num">0</span>, <span class="php-num">1</span>) == <span class="php-quote">'.'</span>) <span class="php-keyword1">continue</span>;
+</span><span id="39" class="l"><a class="l" href="#39">39: </a>
+</span><span id="40" class="l"><a class="l" href="#40">40: </a>        <span class="php-var">$filename</span> = <span class="php-var">$directory</span> . <span class="php-quote">'/'</span> . <span class="php-var">$f</span>;
+</span><span id="41" class="l"><a class="l" href="#41">41: </a>        <span class="php-keyword2">date_default_timezone_set</span>(<span class="php-quote">'America/Los_Angeles'</span>);
+</span><span id="42" class="l"><a class="l" href="#42">42: </a>        <span class="php-var">$lastmod</span> = <span class="php-keyword2">date</span>(<span class="php-quote">'M j, Y, g:i a'</span>, <span class="php-keyword2">filemtime</span>(<span class="php-var">$filename</span>));
+</span><span id="43" class="l"><a class="l" href="#43">43: </a>
+</span><span id="44" class="l"><a class="l" href="#44">44: </a>        <span class="php-keyword1">if</span>(<span class="php-keyword2">is_dir</span>(<span class="php-var">$directory</span>.<span class="php-quote">'/'</span>.<span class="php-var">$f</span>)){
+</span><span id="45" class="l"><a class="l" href="#45">45: </a>            <span class="php-var">$qtip</span> = <span class="php-quote">'Type: Folder&lt;br /&gt;Last Modified: '</span>.<span class="php-var">$lastmod</span>;
+</span><span id="46" class="l"><a class="l" href="#46">46: </a>            <span class="php-var">$nodes</span>[] = <span class="php-keyword1">array</span>(
+</span><span id="47" class="l"><a class="l" href="#47">47: </a>                <span class="php-quote">'text'</span> =&gt; <span class="php-var">$f</span>,
+</span><span id="48" class="l"><a class="l" href="#48">48: </a>                <span class="php-quote">'id'</span>   =&gt; <span class="php-var">$node</span>.<span class="php-quote">'/'</span>.<span class="php-var">$f</span>,
+</span><span id="49" class="l"><a class="l" href="#49">49: </a>                <span class="php-quote">'cls'</span>  =&gt; <span class="php-quote">'folder'</span>,
+</span><span id="50" class="l"><a class="l" href="#50">50: </a>                <span class="php-quote">'qtip'</span> =&gt; <span class="php-var">$qtip</span>
+</span><span id="51" class="l"><a class="l" href="#51">51: </a>            );
+</span><span id="52" class="l"><a class="l" href="#52">52: </a>        } <span class="php-keyword1">else</span> {
+</span><span id="53" class="l"><a class="l" href="#53">53: </a>            <span class="php-var">$size</span> = formatBytes(<span class="php-keyword2">filesize</span>(<span class="php-var">$filename</span>), <span class="php-num">2</span>);
+</span><span id="54" class="l"><a class="l" href="#54">54: </a>            <span class="php-var">$qtip</span> = <span class="php-quote">'Type: JavaScript File&lt;br /&gt;Last Modified: '</span>.<span class="php-var">$lastmod</span>.<span class="php-quote">'&lt;br /&gt;Size: '</span>.<span class="php-var">$size</span>;
+</span><span id="55" class="l"><a class="l" href="#55">55: </a>            <span class="php-var">$nodes</span>[] = <span class="php-keyword1">array</span>(
+</span><span id="56" class="l"><a class="l" href="#56">56: </a>                <span class="php-quote">'text'</span> =&gt; <span class="php-var">$f</span>,
+</span><span id="57" class="l"><a class="l" href="#57">57: </a>                <span class="php-quote">'id'</span>   =&gt; <span class="php-var">$node</span>.<span class="php-quote">'/'</span>.<span class="php-var">$f</span>,
+</span><span id="58" class="l"><a class="l" href="#58">58: </a>                <span class="php-quote">'leaf'</span> =&gt; <span class="php-keyword1">true</span>,
+</span><span id="59" class="l"><a class="l" href="#59">59: </a>                <span class="php-quote">'cls'</span>  =&gt; <span class="php-quote">'file'</span>,
+</span><span id="60" class="l"><a class="l" href="#60">60: </a>                <span class="php-quote">'qtip'</span> =&gt; <span class="php-var">$qtip</span>
+</span><span id="61" class="l"><a class="l" href="#61">61: </a>            );
+</span><span id="62" class="l"><a class="l" href="#62">62: </a>        }
+</span><span id="63" class="l"><a class="l" href="#63">63: </a>    }
+</span><span id="64" class="l"><a class="l" href="#64">64: </a>    <span class="php-var">$d</span>-&gt;close();
+</span><span id="65" class="l"><a class="l" href="#65">65: </a>}
+</span><span id="66" class="l"><a class="l" href="#66">66: </a>
+</span><span id="67" class="l"><a class="l" href="#67">67: </a><span class="php-keyword1">if</span> (<span class="php-var">$isXml</span>) {
+</span><span id="68" class="l"><a class="l" href="#68">68: </a>    <span class="php-var">$xmlDoc</span> = <span class="php-keyword1">new</span> DOMDocument();
+</span><span id="69" class="l"><a class="l" href="#69">69: </a>    <span class="php-var">$root</span> = <span class="php-var">$xmlDoc</span>-&gt;appendChild(<span class="php-var">$xmlDoc</span>-&gt;createElement(<span class="php-quote">&quot;nodes&quot;</span>));
+</span><span id="70" class="l"><a class="l" href="#70">70: </a>    <span class="php-keyword1">foreach</span> (<span class="php-var">$nodes</span> <span class="php-keyword1">as</span> <span class="php-var">$node</span>) {
+</span><span id="71" class="l"><a class="l" href="#71">71: </a>        <span class="php-var">$xmlNode</span> = <span class="php-var">$root</span>-&gt;appendChild(<span class="php-var">$xmlDoc</span>-&gt;createElement(<span class="php-quote">&quot;node&quot;</span>));
+</span><span id="72" class="l"><a class="l" href="#72">72: </a>        <span class="php-var">$xmlNode</span>-&gt;appendChild(<span class="php-var">$xmlDoc</span>-&gt;createElement(<span class="php-quote">&quot;text&quot;</span>, <span class="php-var">$node</span>[<span class="php-quote">'text'</span>]));
+</span><span id="73" class="l"><a class="l" href="#73">73: </a>        <span class="php-var">$xmlNode</span>-&gt;appendChild(<span class="php-var">$xmlDoc</span>-&gt;createElement(<span class="php-quote">&quot;id&quot;</span>, <span class="php-var">$node</span>[<span class="php-quote">'id'</span>]));
+</span><span id="74" class="l"><a class="l" href="#74">74: </a>        <span class="php-var">$xmlNode</span>-&gt;appendChild(<span class="php-var">$xmlDoc</span>-&gt;createElement(<span class="php-quote">&quot;cls&quot;</span>, <span class="php-var">$node</span>[<span class="php-quote">'cls'</span>]));
+</span><span id="75" class="l"><a class="l" href="#75">75: </a>        <span class="php-var">$xmlNode</span>-&gt;appendChild(<span class="php-var">$xmlDoc</span>-&gt;createElement(<span class="php-quote">&quot;leaf&quot;</span>, <span class="php-keyword1">isset</span>(<span class="php-var">$node</span>[<span class="php-quote">'leaf'</span>])));
+</span><span id="76" class="l"><a class="l" href="#76">76: </a>    }
+</span><span id="77" class="l"><a class="l" href="#77">77: </a>    <span class="php-keyword2">header</span>(<span class="php-quote">&quot;Content-Type: text/xml&quot;</span>);
+</span><span id="78" class="l"><a class="l" href="#78">78: </a>    <span class="php-var">$xmlDoc</span>-&gt;formatOutput = <span class="php-keyword1">true</span>;
+</span><span id="79" class="l"><a class="l" href="#79">79: </a>    <span class="php-keyword1">echo</span> <span class="php-var">$xmlDoc</span>-&gt;saveXml();
+</span><span id="80" class="l"><a class="l" href="#80">80: </a>} <span class="php-keyword1">else</span> {
+</span><span id="81" class="l"><a class="l" href="#81">81: </a>    <span class="php-keyword2">header</span>(<span class="php-quote">&quot;Content-Type: text/json&quot;</span>);
+</span><span id="82" class="l"><a class="l" href="#82">82: </a>    <span class="php-keyword1">echo</span> <span class="php-keyword2">json_encode</span>(<span class="php-var">$nodes</span>);
+</span><span id="83" class="l"><a class="l" href="#83">83: </a>}
+</span><span id="84" class="l"><a class="l" href="#84">84: </a></span></code></pre>
+
+	<div id="footer">
+		PHPExtJS API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

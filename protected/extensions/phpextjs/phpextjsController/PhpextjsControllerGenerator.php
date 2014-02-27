@@ -1,4 +1,9 @@
 <?php
+/**
+ *
+ * @author Sani Iman Pribadi
+ *
+ */
 
     class PhpextjsControllerGenerator extends CCodeGenerator {
 

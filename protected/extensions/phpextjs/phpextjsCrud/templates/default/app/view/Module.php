@@ -1,3 +1,10 @@
+<?php
+/**
+ *
+ * @author Sani Iman Pribadi
+ *
+ */
+?>
 Ext.define('PHPExtJS.view.<?php echo $this->modelClass; ?>.Module', {
     extend: 'Ext.ux.desktop.Module',
 	

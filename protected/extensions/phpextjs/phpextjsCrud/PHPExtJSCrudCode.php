@@ -1,5 +1,10 @@
 <?php
 
+/**
+ *
+ * @author Sani Iman Pribadi
+ *
+ */
 class PHPExtJSCrudCode extends CCodeModel
 {
 	public $model;

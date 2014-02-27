@@ -1,3 +1,15 @@
+<?php
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Sani Iman Pribadi
+ *
+ */
+?>
 Ext.define('PHPExtJS.view.<?php echo $this->modelClass; ?>.Module', {
     extend: 'Ext.ux.desktop.Module',
 	

@@ -1,4 +1,16 @@
 <?php
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Sani Iman Pribadi
+ *
+ */
+?>
+<?php
 /**
  * This is the template for generating an action view file.
  * The following variables are available in this template:

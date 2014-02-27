@@ -1,4 +1,9 @@
 <?php
+/**
+ *
+ * @author Sani Iman Pribadi
+ *
+ */
 
     class PhpextjsControllerCode extends CCodeModel {
 

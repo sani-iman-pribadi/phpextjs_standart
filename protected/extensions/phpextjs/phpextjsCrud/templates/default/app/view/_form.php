@@ -1,3 +1,10 @@
+<?php
+/**
+ *
+ * @author Sani Iman Pribadi
+ *
+ */
+?>
 Ext.define('PHPExtJS.view.<?php echo $this->modelClass; ?>._form', {
     //extend: 'Ext.form.Panel', //use this code for panel form
     extend: 'Ext.window.Window',

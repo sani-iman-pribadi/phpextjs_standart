@@ -1,3 +1,10 @@
+<?php
+/**
+ *
+ * @author Sani Iman Pribadi
+ *
+ */
+?>
 Ext.define('PHPExtJS.model.<?php echo $this->modelClass; ?>', {
 extend: 'Ext.data.Model',
 fields: [

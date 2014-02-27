@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Description of UserController
+ *
+ * @author Sani Iman Pribadi
+ *
+ */
+
     class UserController extends Controller {
 
         /**

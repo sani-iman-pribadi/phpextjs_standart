@@ -1,14 +1,9 @@
 <?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * Description of WebUser
  *
- * @author sani
+ * @author Sani Iman Pribadi
+ *
  */
 class WebUser extends CWebUser {
     //put your code here

@@ -1,3 +1,10 @@
+<?php
+/**
+ *
+ * @author Sani Iman Pribadi
+ *
+ */
+?>
 Ext.define('PHPExtJS.store.<?php echo $this->controllerClass; ?>', {
     extend: 'Ext.data.Store',
     model: 'PHPExtJS.model.<?php echo $this->controllerClass; ?>',

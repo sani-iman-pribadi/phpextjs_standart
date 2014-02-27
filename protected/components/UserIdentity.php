@@ -1,4 +1,10 @@
 <?php
+/**
+ * Description of UserIdentity
+ *
+ * @author Sani Iman Pribadi
+ *
+ */
 class UserIdentity extends CUserIdentity
 {
     private $_id;

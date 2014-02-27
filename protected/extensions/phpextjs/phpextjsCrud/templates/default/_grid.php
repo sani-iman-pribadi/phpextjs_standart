@@ -1,3 +1,15 @@
+<?php
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Sani Iman Pribadi
+ *
+ */
+?>
 Ext.define('PHPExtJS.view.<?php echo $this->modelClass; ?>._grid', {
     extend: 'Ext.grid.Panel',
     alias: 'widget.<?php echo strtolower($this->modelClass) . 'Grid' ?>',
