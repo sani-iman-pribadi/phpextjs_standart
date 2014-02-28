@@ -45,3 +45,43 @@ REQUEST_URI=/phpextjs_standart/docs/api/classes.svg
 HTTP_REFERER=http://localhost/phpextjs_standart/docs/api/graph_class.html
 ---
 2014/02/27 06:37:58 [error] [exception.CDbException] SQLSTATE[HY000] [1049] Unknown database 'phpextjs_standart'
+2014/02/27 07:06:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/php/index.html".' in /Applications/XAMPP/xamppfiles/htdocs/framework/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('api/php/index.h...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/phpextjs_standart/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phpextjs_standart/api/php/index.html
+HTTP_REFERER=http://localhost/phpextjs_standart/api/php/source-class-PhpextjsControllerCode.html
+---
+2014/02/27 07:06:04 [error] [exception.CDbException] SQLSTATE[HY000] [1049] Unknown database 'phpextjs_standart'
+2014/02/27 07:06:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/php/app.js".' in /Applications/XAMPP/xamppfiles/htdocs/framework/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('api/php/app.js')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/phpextjs_standart/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phpextjs_standart/api/php/app.js
+HTTP_REFERER=http://localhost/phpextjs_standart/api/php/index.html
+---
+2014/02/27 07:06:04 [error] [exception.CDbException] SQLSTATE[HY000] [1049] Unknown database 'phpextjs_standart'
+2014/02/27 07:06:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/php/shared/options-toolbar.js".' in /Applications/XAMPP/xamppfiles/htdocs/framework/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('api/php/shared/...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/phpextjs_standart/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phpextjs_standart/api/php/shared/options-toolbar.js
+HTTP_REFERER=http://localhost/phpextjs_standart/api/php/index.html
+---
+2014/02/27 07:06:04 [error] [exception.CDbException] SQLSTATE[HY000] [1049] Unknown database 'phpextjs_standart'
+2014/02/27 07:06:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/php/shared/include-ext.js".' in /Applications/XAMPP/xamppfiles/htdocs/framework/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('api/php/shared/...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/phpextjs_standart/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phpextjs_standart/api/php/shared/include-ext.js
+HTTP_REFERER=http://localhost/phpextjs_standart/api/php/index.html
+---
+2014/02/27 07:06:04 [error] [exception.CDbException] SQLSTATE[HY000] [1049] Unknown database 'phpextjs_standart'
