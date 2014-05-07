@@ -1,0 +1,7 @@
+http://www.phpextjs.com/license
+
+Open Source License
+------------------------------------------------------------------------------------------
+PHPExtJS open source project and distributed under the GNU GENERAL PUBLIC LICENSE Version 3 (GNU GPLv3).
+
+The text of the official GNU GPLv3 license is available on the www.gnu.org website.
